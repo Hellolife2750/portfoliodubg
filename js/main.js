@@ -30,7 +30,7 @@ const purposes = {
 };
 
 /*récupère le informations sur les projets contenues dans le fichier json*/
-fetch('../res/data/projects.json')
+fetch('./res/data/projects.json')
     .then(response => response.json())
     .then(data => {
         const cards = data.projects;
