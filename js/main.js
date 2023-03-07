@@ -46,7 +46,7 @@ function generateCardCode(card) {
     let cardCode = `
     <div class="card">
     <div class="head">
-        <img class="language-logo" src="../res/img/languages/${card.language}.png" alt="logo du ${card.language}">
+        <img class="language-logo" src="./res/img/languages/${card.language}.png" alt="logo du ${card.language}">
         <i class="${purposes[card.purpose]}"></i>
         <p>${card.date}</p>
     </div>
@@ -117,11 +117,11 @@ allFoldButtons.forEach(element => {
         const height = currentChoice.scrollHeight;
 
         if (this.src.includes('plus')) {
-            this.src = '../res/img/minus.svg';
+            this.src = './res/img/minus.svg';
 
             gsap.to(currentChoice, { duration: 0.2, height: height + 40, opacity: 1, padding: '20px 15px' })
         } else if (this.src.includes('minus')) {
-            this.src = '../res/img/plus.svg';
+            this.src = './res/img/plus.svg';
             gsap.to(currentChoice, { duration: 0.2, height: 0, opacity: 0, padding: '0px 15px' })
         }
 
