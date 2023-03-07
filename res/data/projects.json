@@ -5,7 +5,7 @@
             "date": 2021,
             "purpose": "personnal",
             "language": "cpp",
-            "thumb": "../res/img/projects/aquarescue.png",
+            "thumb": "./res/img/projects/aquarescue.png",
             "containerId": "video-games",
             "description": "AquaRescue est un jeu vidéo codé en C++. L'objectif est, dans un temps imparti, de ramasser le maximum de déchets dans l'océan. Il faut également faire attention aux ennemis tels que les requins et à sa barre d'oxygène. Ce jeu a été créé à l'ocation d'une GameJam pour la lutte contre le pollution des océans."
         },
