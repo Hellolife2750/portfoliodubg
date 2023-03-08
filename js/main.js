@@ -29,8 +29,14 @@ const purposes = {
     educational: "fa-solid fa-graduation-cap",
 };
 
+const cors = require('cors');
+const { append } = require('vary');
+
+app.use(cors());
+
 /*récupère le informations sur les projets contenues dans le fichier json*/
-fetch('./res/data/projects.json')
+fetch('projects.json')
+
     .then(response => response.json())
     .then(data => {
         const cards = data.projects;
